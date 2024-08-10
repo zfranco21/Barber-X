@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -8,7 +9,48 @@
     <link rel="shortcut icon" href="{{ url_for('static', filename='img/logops1.svg') }}" type="image/x-icon">
     <title>Barber X</title>
 </head>
+
 <body>
-    <h1>Hola mundo</h1>
+    <div class="flex flex-col bg-cover bg-center bg-no-repeat h-dvh" style="background-image: url('{{ url_for('static', filename='imagenes/pexels-nickoloui-1319459.jpg') }}');">
+        <header class="bg-zinc-900 text-white p-4 flex justify-center items-center flex-row bg-opacity-70">
+            <div class="flex items-center ">
+                <img src="{{ url_for('static', filename='imagenes/logo.svg') }}" alt="Logo" class="h-10 mr-3">
+                <h1 class="text-xl font-bold">Barber X</h1>
+            </div>
+            <nav class="flex space-x-6 mx-48">
+                <a href="#home" class="hover:underline">Home</a>
+                <a href="#about" class="hover:underline">About</a>
+                <a href="#services" class="hover:underline">Services</a>
+                <a href="#contact" class="hover:underline">Contact</a>
+            </nav>
+            <div class="flex space-x-3">
+                <a href="#"><img src="{{ url_for('static', filename='imagenes/facebook.svg') }}" alt="Facebook" class="w-5"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imagenes/instagram.svg') }}" alt="Instagram" class="w-5"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imagenes/whatsapp.svg') }}" alt="WhatsApp" class="w-5"></a>
+                <a href="#"><img src="{{ url_for('static', filename='imagenes/tik-tok.svg') }}" alt="TikTok" class="w-5"></a>
+            </div>
+        </header>
+
+        <main class="flex flex-col w-auto h-full items-center justify-center">
+            <h2 class="text-white text-2xl ">Cortes & Tinturas</h2>
+            <h1 class="text-white font-mono text-8xl">Barber X</h1>
+            <a href=""><img src="" alt=""></a>
+        </main>
+    </div> 
+    <div class="bg-zinc-900 h-dvh">  
+        <nav>
+            <h2>Navegación 1</h2>
+            <ul>
+                <li><a href="#link1">Enlace 1</a></li>
+                <li><a href="#link2">Enlace 2</a></li>
+                <li><a href="#link3">Enlace 3</a></li>
+            </ul>
+        </nav>
+    </div> 
+
+    <footer>
+        <p>&copy; 2024 Mi Sitio Web. Todos los derechos reservados.</p>
+    </footer>
 </body>
+
 </html>
