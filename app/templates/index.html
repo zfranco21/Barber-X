@@ -11,7 +11,7 @@
 </head>
 
 <body>
-    <div class="flex flex-col bg-cover bg-center bg-no-repeat h-dvh" style="background-image: url('{{ url_for('static', filename='imagenes/pexels-nickoloui-1319459.jpg') }}');">
+    <div id="home" class="flex flex-col bg-cover bg-center bg-no-repeat h-dvh" style="background-image: url('{{ url_for('static', filename='imagenes/pexels-nickoloui-1319459.jpg') }}');">
         <header class="bg-zinc-900 text-white p-4 flex justify-center items-center flex-row bg-opacity-70">
             <div class="flex items-center ">
                 <img src="{{ url_for('static', filename='imagenes/logo.svg') }}" alt="Logo" class="h-10 mr-3">
@@ -37,6 +37,7 @@
             <a href=""><img src="" alt=""></a>
         </main>
     </div> 
+
     <div class="bg-zinc-900 h-dvh">  
         <nav>
             <h2>Navegación 1</h2>
@@ -56,8 +57,41 @@
 
     <!-- SECCIÓN DE SERVICIOS: Franco-->
 
-    <section id="servicios">
-        <!--codigo franco-->
+    <section id="services">
+
+        <div class="flex flex-col bg-cover bg-center bg-no-repeat h-dvh" style="background-image: url('{{ url_for('static', filename='imagenes/backgroundServices.webp') }}');">
+
+            <div class="text-center mt-20 mb-32">
+                <h2 class="text-6xl text-white font-bold">
+                    Servicios de Barbería
+                </h2>
+                <p class="text-1xl text-white font-semibold mt-8">
+                    Estos son algunos de los servicios que ofrecemos en <strong>Barberia X</strong>, Seleccioná uno y reservá tu turno rapidamente.
+                </p>            
+            </div>
+
+            <div class="grid grid-cols-3 space-x-10 mx-60">
+
+                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/cortePelo.svg') }}" title="corte de pelo" alt="corte de pelo">
+                    <h3 class="mt-10 pt-10 font-bold text-2xl">Corte de Pelo</h3>
+                </div></a>
+
+                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/tintura.svg') }}" title="Tintura" alt="Tintura">
+                    <h3 class="mt-10 pt-10 font-bold text-2xl">Tintura</h3>
+                </div></a>
+
+                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/productos.svg') }}" title="Productos de Mantenimiento" alt="Productos de Mantenimiento">
+                    <h3 class="mt-10 pt-10 font-bold text-2xl">Producto de Mantenimiento</h3>
+                </div></a>
+            </div>
+            
+        </div>
+
+
+            
     </section>
 
 
