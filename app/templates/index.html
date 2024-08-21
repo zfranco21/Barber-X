@@ -19,8 +19,8 @@
             </div>
             <nav class="flex space-x-6 mx-48">
                 <a href="#home" class="hover:underline">Home</a>
-                <a href="#about" class="hover:underline">About</a>
-                <a href="#services" class="hover:underline">Services</a>
+                <a href="#about" class="hover:underline">Services</a>
+                <a href="#services" class="hover:underline">About</a>
                 <a href="#contact" class="hover:underline">Contact</a>
             </nav>
             <div class="flex space-x-3">
@@ -37,6 +37,50 @@
             <a href=""><img src="" alt=""></a>
         </main>
     </div> 
+
+
+        <!-- SECCIÓN DE SERVICIOS: Franco-->
+
+        <section id="services">
+
+            <div class="bg-zinc-900 flex flex-col bg-cover bg-center bg-no-repeat h-dvh">
+    
+                <div class="text-center mt-20 mb-32">
+                    <h2 class="text-6xl text-white font-bold">
+                        Servicios de Barbería
+                    </h2>
+                    <p class="text-1xl text-white font-semibold mt-8">
+                        Estos son algunos de los servicios que ofrecemos en <strong>Barberia X</strong>, Seleccioná uno y reservá tu turno rapidamente.
+                    </p>            
+                </div>
+    
+                <div class="grid grid-cols-3 space-x-10 mx-60">
+    
+                    <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                        <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/cortePelo.svg') }}" title="corte de pelo" alt="corte de pelo">
+                        <h3 class="mt-10 pt-10 font-bold text-2xl">Corte de Pelo</h3>
+                    </div></a>
+    
+                    <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                        <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/tintura.svg') }}" title="Tintura" alt="Tintura">
+                        <h3 class="mt-10 pt-10 font-bold text-2xl">Tintura</h3>
+                    </div></a>
+    
+                    <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
+                        <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/productos.svg') }}" title="Productos de Mantenimiento" alt="Productos de Mantenimiento">
+                        <h3 class="mt-10 pt-10 font-bold text-2xl">Producto de Mantenimiento</h3>
+                    </div></a>
+                </div>
+                
+            </div>
+    
+    
+                
+        </section>
+    
+    
+        <!--Fin de Sección Servicios-->
+
 <!--SECCIÓN ABOUT-->
     <div class="bg-zinc-900 h-dvh">
         <div class="grid grid-cols-2 grid-rows-1 p-20">
@@ -55,61 +99,11 @@
                 </section>
         </div>
     </div>
-    <div class="bg-zinc-800 h-dvh flex flex-col text-white justify-start items-center p-20">
+    <div class="bg-zinc-900 h-dvh flex flex-col text-white justify-start items-center p-20">
       <h2 class="text-4xl p-6 text-white">UBICACIÓN</h2>
       <a href=""></a>
       <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d22072.44290197562!2d-58.54840422521982!3d-34.677721654197725!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcc62cc3ef7083%3A0x8867107f425fade5!2sUniversidad%20Nacional%20de%20La%20Matanza!5e0!3m2!1ses!2sar!4v1723994052438!5m2!1ses!2sar" width="1000" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
     </div>
-
-    
-
-
-
-
-
-
-
-    <!-- SECCIÓN DE SERVICIOS: Franco-->
-
-    <section id="services">
-
-        <div class="flex flex-col bg-cover bg-center bg-no-repeat h-dvh" style="background-image: url('{{ url_for('static', filename='imagenes/backgroundServices.webp') }}');">
-
-            <div class="text-center mt-20 mb-32">
-                <h2 class="text-6xl text-white font-bold">
-                    Servicios de Barbería
-                </h2>
-                <p class="text-1xl text-white font-semibold mt-8">
-                    Estos son algunos de los servicios que ofrecemos en <strong>Barberia X</strong>, Seleccioná uno y reservá tu turno rapidamente.
-                </p>            
-            </div>
-
-            <div class="grid grid-cols-3 space-x-10 mx-60">
-
-                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
-                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/cortePelo.svg') }}" title="corte de pelo" alt="corte de pelo">
-                    <h3 class="mt-10 pt-10 font-bold text-2xl">Corte de Pelo</h3>
-                </div></a>
-
-                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
-                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/tintura.svg') }}" title="Tintura" alt="Tintura">
-                    <h3 class="mt-10 pt-10 font-bold text-2xl">Tintura</h3>
-                </div></a>
-
-                <a href=""><div class="mt-36 py-16 px-10 bg-gray-300 hover:bg-gray-50 flex justify-center items-center rounded-3xl">
-                    <img class="w-24 h-24 absolute pb-10" src="{{ url_for('static', filename='imagenes/productos.svg') }}" title="Productos de Mantenimiento" alt="Productos de Mantenimiento">
-                    <h3 class="mt-10 pt-10 font-bold text-2xl">Producto de Mantenimiento</h3>
-                </div></a>
-            </div>
-            
-        </div>
-
-
-            
-    </section>
-
-
-    <!--Fin de Sección Servicios-->
 
 
 
